@@ -1,0 +1,64 @@
+:root {
+	--color-white: #fff;
+	--color-bg: #f8de9d;
+	--color-bg-light: #fff6e5;
+	--color-gray: #c7c7c7;
+	--color-text: #333;
+	--color-accent: #ee8461;
+	--color-scroll: #f0b19c;
+}
+
+html.dark{
+	--color-bg: #383838;
+	--color-bg-light: #585858;
+	--color-text: #fff;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+ul {
+	list-style: none;
+}
+
+body {
+	width: 100vw;
+	height: 100vh;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	font-size: 1.2rem;
+	background-color: #fbab7e;
+	background-image: linear-gradient(62deg, #fbab7e 0%, #f7ce68 100%);
+}
+#root {
+	width: 100%;
+	max-width: 500px;
+	height: 60%;
+	background-color: var(--color-bg-light);
+	border-radius: 1rem;
+	display: flex;
+	flex-direction: column;
+	box-shadow: 5px 5px 25px rgba(107, 64, 0, 0.3);
+	overflow: auto;
+}
+button {
+	border: none;
+	outline: none;
+}
+
+::-webkit-scrollbar{
+	width: 0.5rem;
+}
+::-webkit-scrollbar-track{
+	background-color: var(--color-bg-light);
+}
+::-webkit-scrollbar-thumb{
+	background-color: var(--color-scroll);
+	border-radius: 6px;
+}
+::-webkit-scrollbar-thumb:hover{
+	background-color: var(--color-bg);
+}
