@@ -12,8 +12,10 @@ const Todo = ({ todo, onUpdate, onDelete }) => {
 	const handleDelete = () => onDelete(todo);
 	return (
 		<li className={styles.todo}>
-			<input type='checkbox' id={id} className={styles.checkbox} checked={status == 'completed'} onChange={handleChange} />
-			<label htmlFor={id} className={styles.text}>{text}</label>
+			<input type='checkbox' id={id} className={styles.checkbox} checked={status === 'completed'} onChange={handleChange} />
+			<label htmlFor={id} className={styles.text}>
+				{text}
+			</label>
 			<span className={styles.icon}>
 				<button onClick={handleDelete} className={styles.button}>
 					<RiDeleteBin5Line />

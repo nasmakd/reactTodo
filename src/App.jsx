@@ -1,10 +1,8 @@
-import React, { useState, useContext} from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import TodoList from './components/TodoList/TodoList';
 import Header from './components/Header/Header';
-import {DarkModeProvider} from './components/context/DarkModeContext';
-
-
+import { DarkModeProvider } from './components/context/DarkModeContext';
 
 // 어떤 필터가 있는지 컴포넌트 밖에서 정의
 const filters = ['all', 'active', 'completed'];
